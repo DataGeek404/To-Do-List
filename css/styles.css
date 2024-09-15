@@ -1,0 +1,132 @@
+/* General body styling */
+body {
+    background-color: #f4f7fc; /* Lighter background for a cleaner look */
+    font-family: 'Roboto', sans-serif; /* Modern font for a professional look */
+    color: #343a40; /* Text color */
+}
+
+/* Style for the task list container */
+.container {
+    max-width: 700px; /* Increased width for better task view */
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px; /* Slightly larger border radius for softer edges */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Deeper shadow for emphasis */
+}
+
+/* Title styling */
+h2 {
+    text-align: center;
+    font-size: 28px; /* Larger title for more focus */
+    font-weight: 600; /* Bolder for clarity */
+    margin-bottom: 25px;
+    color: #212529; /* Darker shade for prominence */
+}
+
+/* Form styling */
+form {
+    display: flex;
+    gap: 15px; /* Increased gap for better spacing */
+    margin-bottom: 25px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 12px;
+    border-radius: 8px; /* Softer input field edges */
+    border: 1px solid #ced4da;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+    font-size: 16px; /* Bigger font for readability */
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight input on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Soft blue glow when focused */
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green for action button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.4); /* Focus state styling */
+}
+
+/* Task list styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    background-color: #007bff; /* Blue header for better contrast */
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+tbody td {
+    background-color: #f8f9fa; /* Subtle background for rows */
+    padding: 12px;
+    border-bottom: 1px solid #dee2e6; /* Line between rows */
+}
+
+tbody tr:hover {
+    background-color: #e2e6ea; /* Row highlight on hover */
+}
+
+/* Button alignment and styling inside table rows */
+td.actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+/* Update and Delete Button Styles */
+/* General Button Styling */
+.btn-sm {
+    padding: 5px 10px; /* Reduced padding for smaller buttons */
+    font-size: 12px; /* Smaller font size */
+    border-radius: 4px; /* Slightly smaller border radius */
+}
+
+/* Ensure buttons are aligned horizontally in the input-group */
+.input-group {
+    display: flex;
+    gap: 5px; /* Smaller gap between buttons */
+}
+
+/* Specific Button Styling */
+.btn-success {
+    background-color: #17a2b8; /* Custom blue-green for update */
+    border-color: #17a2b8;
+}
+
+.btn-success:hover {
+    background-color: #138496; /* Darker blue-green on hover */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Red for delete button */
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
