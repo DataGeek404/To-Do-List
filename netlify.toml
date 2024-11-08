@@ -1,0 +1,6 @@
+[build]
+  publish = "."  # Use the root directory as the publish directory
+  command = "composer install && php -S localhost:8888 -t ."  # Run the server with root as the target directory
+
+[build.environment]
+  PHP_VERSION = "7.4"  # Specify the PHP version (e.g., "7.4" or "8.0")
